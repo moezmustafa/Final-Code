@@ -1,0 +1,226 @@
+
+
+html.body{
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    height : 100vh;
+    /* background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("3back.jpg"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+     
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section{
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+  margin : 20px;
+}
+
+.card{
+    /* shape-rendering: optimizeSpeed; */
+    height: 250px;
+    width : 180px;
+    /* background-color: red; */
+   
+}
+.card-header{
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items: center;
+    background-color : white;
+    transform: translate(0,-125px);
+    z-index: 2;
+    transition: 0.5s all ease ease-out;
+    opacity: 0.9;
+    
+    transition-duration: 0.9s;
+    border-radius: 10px;
+}
+
+.section:hover .card-header{
+    transform: translate(0px,0px);
+    transition: 0.5s;
+    transition-delay: 0.2s;
+    box-shadow: none;
+}
+.card img{
+    width: 150px;
+    display : flex ;
+    justify-content: center;
+}
+.card h1 {
+    color : black;
+
+    /* text-shadow: black; /* it is doing not shit
+    text-size-adjust: 50px;  */
+
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family :'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+}
+.card-body{
+    background-color: #ebcece;
+    box-sizing: border-box;
+    padding: 15px 20px 0px 20px;
+    position: relative;
+    transform: translate(0,125px);
+    z-index: 1;
+    transition : 0.5s all ease-in-out;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    transition-delay: 0.1s;
+    border-radius: 10px;
+}
+
+.section:hover .card-body{
+    transform: translate(0,0);
+    transition: 0.5s;
+}
+.card-body button{
+    border: 1px solid rgb(202, 57, 57);
+    background: transparent;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.card-body button:hover{
+    background-color: #333333;
+    color: white;
+}
+
+.card-body .content {
+opacity: 0.5;
+justify-content: center;
+}
+
+.section:hover .card-body .content {
+    opacity: 5;
+    transform: scale(2);
+    transition: 1s ease-in-out;
+    /* box-shadow: 20px 20px 100px rgba(255, 255, 255, 0.8);
+      */
+    
+}
+.section:hover .card-body .content h1{
+
+    opacity: 0;
+    transition: 1s ease-in-out;
+    transform: translateY(70px);
+
+}
+.section:hover .card-body .content img{
+    opacity: 1;
+    box-shadow: rgba(0,0,0,0.8);
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+body {
+    height: 70vh;
+    background-color: rgb(140, 140, 140);
+    font-family: "Poppins", sans-serif;
+  }
+  a,
+  button {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .dropdown {
+    height: 10vh;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .projects,
+  .products ,
+  .exit {
+    position: relative;
+  }
+  
+  .projects ul,
+  .products ul {
+    margin-top: 10px;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background: white;
+    left: 0px;
+    list-style: none;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+  }
+  .projects li,
+  .products li {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .projects li:hover,
+  .products li:hover {
+    background-color: rgb(197, 173, 181);
+  }
+  
+  .projects a,
+  .products a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .dropdown button,
+  .home {
+    background: none;
+    text-decoration: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .projects button:focus + ul,
+  .products button:focus + ul {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0px);
+  }

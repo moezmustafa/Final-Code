@@ -1,0 +1,242 @@
+body{
+    background-color: rgb(241, 93, 93);
+}
+
+table{
+
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-color: #ccc;
+    width: 100%;
+    margin: 30px auto;
+    font-size: 12px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 40px;
+
+}
+
+
+td {
+
+    padding-left: 300px;
+}
+
+.container table:hover{
+    filter: blur(5px);
+}
+
+.container{
+    margin-top: 20px;
+
+    width: 10%;
+    height: 30vh ;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+        /* background-color: rgb(196, 214, 208); */
+}
+
+.container:hover {
+    /* background-color: red; */
+}
+
+.card-container{
+    width: 200px;
+    height: 300px;
+    /* background-color: red; */
+    
+
+    
+
+}
+
+.card{
+
+    margin-top: 20vh;
+    
+    width: 200px;
+    height: 300px;
+    transition: transform 1s ease-in-out;
+    /* background-color: rosybrown; */
+    transform: presrve-3d;
+
+    
+    
+
+
+    
+}
+
+.card-container .card .controller{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s ease-in-out;
+    transform: rotateY(0deg);
+    /* background-color: rgb(100, 96, 96); */
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.card-container:hover .card .controller{
+
+    /* transform: rotateY(180deg); */
+
+    /* transform: perspective(600px) rotateY(180deg); */
+
+    /* transform: matrix(1, 0, 0, -1, 0, 0); */
+
+    /* transform : translateY(200px); */
+    transform: rotateZ(-90deg);
+
+    
+    /* transform: rotateX(10deg); */
+    /* transform: rotateY(80deg); */
+ /* transform: rotateX(80deg); */
+ transition: transform 1s ease-in-out;
+
+
+display: flex;
+justify-content: center;
+position: center;
+
+
+}
+
+
+.card-container .card{
+
+ 
+
+padding-top: 10%;
+
+}
+
+.card-container .card .controller{
+
+    
+    /* transform: rotateY(180deg); */
+
+    /* transform: perspective(600px) rotateY(180deg); */
+
+    /* transform: matrix(1, 0, 0, -1, 0, 0); */
+
+    /* transform : translateY(200px); */
+    transform: rotateZ(90deg);
+    transform: translateX(0vw);
+    /* transform: rotateX(10deg); */
+    /* transform: rotateY(80deg); */
+ /* transform: rotateX(80deg); */
+ transition: transform 1s ease-in-out;
+
+
+ animation-name: backdiv;
+ animation-duration: 3s;
+animation-iteration-count: initial;
+
+
+
+}
+
+
+@keyframes backdiv {
+    0% {
+      transform: scale(6) rotate(-180deg);
+    }
+    80% {
+      transform: scale(0.5) rotate(-0deg);
+      
+    }
+}
+
+
+.card-container .container {
+    background-color: rgb(235, 88, 88);
+}
+
+.card-container:hover .card .controller{
+
+    /* transform: rotateY(180deg); */
+
+    transform: rotateY(180deg) scale(3);
+
+    /* transform: matrix(1, 0, 2, 1, 2, 1); */
+
+    /* transform : translateY(200px); */
+    /* transform: rotateZ(-150deg);
+    transform: translateX(0vw) scale(2) rotate(-360deg); */
+
+    /* transform:scale(1); */
+    /* transform: rotateX(10deg); */
+    /* transform: rotateY(80deg); */
+ /* transform: rotateX(80deg); */
+ transition: transform 1s ease-in-out;
+
+ background-color: yellow;
+
+
+ 
+
+}
+
+
+.card figure{
+    width: 100%;
+    height: 100%;
+ 
+}
+
+.card .front{
+    /* width: 200px;
+    height: 300px; */
+    background-color: green;
+    color: white;
+    
+}
+
+.card .back{
+    /* width: 200px;
+    height: 300px; */
+    background-color: blue;
+    color: white;
+
+    transform: rotateY(180deg);
+}
+
+img {
+    width: 150%;
+    height: 80%;
+}
+
+
+
+
+.container-image{
+
+    width: 150%;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    
+ 
+}
+
+
+
+h1{
+    font-size: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(236, 236, 236);
+    text-align: center;
+    margin-top: 20px;
+}
